@@ -39,13 +39,15 @@ You should restart Xcode after that.
 
 # What does this do?
 
-The primary goal of this plugin is to change the order of the attributes when creating an `IBOutlet`. By default, Xcode uses `(strong|weak), nonatomic`, but everyone knows that The Right Way™ to declare a propery is `nonatomic, (strong|weak)` and this plugin fixes that. You're welcome.
+The primary goal of this plugin is to change the order of the attributes when creating an `IBOutlet`. By default, Xcode uses `(strong|weak), nonatomic`, but everyone knows that The Right Way™ to declare a propery is `nonatomic, (strong|weak)` and this plugin fixes that. 
+
+You're welcome.
 
 # Thanks
 
 - [@leoformaggio](https://twitter.com/leoformaggio) for naming the plugin
 - This README template was shamelessly copied from [@neonacho](https://twitter.com/neonacho)'s [FixCode](https://github.com/neonichu/FixCode)
-- [@orta](https://twitter.com/orta) for blogging about [his experience building a plugin](http://artsy.github.io/blog/2014/06/17/building-the-xcode-plugin-snapshots/)
+- [@orta](https://twitter.com/orta) for blogging about [his experience on building a Xcode plugin](http://artsy.github.io/blog/2014/06/17/building-the-xcode-plugin-snapshots/)
 - [@kattrali](https://twitter.com/kattrali) for providing a [template for Xcode plugins](https://github.com/kattrali/Xcode-Plugin-Template)
 
 # Need help?
