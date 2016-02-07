@@ -54,6 +54,11 @@
     if (![url isKindOfClass:[NSNull class]]) {
         NSRange range = [[firstChange valueForKey:@"characterRange"] rangeValue];
 
+        // Check if it's a valid range
+        if (range.length == 0 || range.location == NSNotFound) {
+            return;
+        }
+
         // Check if it's an IDESourceCodeDocument
         if (![notification.object respondsToSelector:@selector(textStorage)]) {
             return;
