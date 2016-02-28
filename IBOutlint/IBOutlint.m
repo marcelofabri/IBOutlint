@@ -65,7 +65,14 @@
         }
 
         id textStorage = [notification.object textStorage];
-        NSAttributedString *attributed = [textStorage attributedSubstringFromRange:range];
+        NSAttributedString *attributed;
+
+        @try {
+            attributed = [textStorage attributedSubstringFromRange:range];
+        }
+        @catch (NSException *exception) {
+            return;
+        }
 
         NSString *substring = attributed.string;
 
